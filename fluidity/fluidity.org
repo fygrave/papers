@@ -1,0 +1,84 @@
+#+Title: The Age of Warring Nets: spotting malice in Fluid States of the Internet 
+#+Author:  Fyodor Yarochkin, Vladimir Kropotov, Vitaliy Chetvertakov, Yennun Huang
+#+EMAIL: fygrave@gmail.com
+#+DESCRIPTION: Malice mining
+#+DATE: <2014-01-25 Thu>
+#+LaTeX_HEADER: 
+#+LATEX_HEADER_EXTRA:
+#+LATEX_CLASS_OPTIONS: [times,5pt]
+#+LaTeX_HEADER: \usepackage[T1]{fontenc}
+#+LaTeX_HEADER: \usepackage{mathpazo}
+#+LaTeX_HEADER: \usepackage{tabularx}
+#+LaTeX_HEADER: \linespread{.95}
+#+LaTeX_HEADER: \usepackage[scaled]{helvet}
+#+LaTeX_HEADER: \usepackage{courier}
+#+LATEX_HEADER: \usepackage{hyperref}
+#+LATEX_HEADER: \hypersetup{
+#+LATEX_HEADER:     colorlinks,%
+#+LATEX_HEADER:     citecolor=black,%
+#+LATEX_HEADER:     filecolor=black,%
+#+LATEX_HEADER:     linkcolor=blue,%
+#+LATEX_HEADER:     urlcolor=black
+#+LATEX_HEADER: }
+#+LATEX_HEADER_EXTRA:
+#+OPTIONS:    textht:t H:3 num:nil toc:nil
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+
+* Abstract
+
+The Internet as a global network is not a static system. It is ever
+changing fluid platform with a number of dynamic characteristics. In
+the early days of the Internet, the platform was designed as a
+cooperative network of distributed machines, where malice or malicious
+behavior was not expected, and could be easily resolved by isolating
+the offending node. However, with the rapid growth of the global
+network the situation changed dramatically. In the recent light of
+discovery of mass state-sponsored surveillance, militarization of
+Internet and global criminal activities we want to explore anomalies
+in a dynamic Internet characteristics. In order to do so we passively
+recorded and analyzed behavior of several network components, namely:
+Domain Name System (DNS), Routing and Advertising Networks.
+
+This paper presents our methodology, discusses our approach on
+detecting anomalies and reveals findings.
+
+* Introduction
+
+It is essential to understand the nature of modern Internet, which
+resembles period of Warring States in Ancient China. State-sponsored
+surveillance is wide-spread, criminal activities, raging from
+targeted exploitation to mass criminal campaigns are common in modern
+Internet.
+
+In this study we monitor several key components of a modern Internet
+System that affects nearly every network user - namely Domain Name
+System, Routing and Advertising/Banner networks. We attempt to record
+and document fluidity and volatility of each component and apply
+analytics to identify anomalous and suspicious behavior within these
+components, which could not be attributed to benign functionality of
+the network.
+
+* Fluid States and Protocols
+** Passive DNS
+** Passive BGP
+BGP is one of critical components of Internet Routing. Our motivation
+of analyzing BGP routing fluidity was the fact known
+attacks on BGP\cite{youtubehijack} that led to large-scale network
+interception and network surveillance possibilities. We have
+implemented a *passive BGP* monitoring platform that we discuss
+further in this paper.
+
+** Passive HTTP and Ad networks
+
+* Anomaly Detection
+
+* Findings
+
+* Conclusions
+
+
+
+
+\bibliographystyle{plain}
+\bibliography{refs}{}
+
